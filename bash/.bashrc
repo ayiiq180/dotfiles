@@ -9,3 +9,5 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 [[ $- == *i* ]] && source "/usr/share/fzf/completion.bash" 2> /dev/null
 source "/usr/share/fzf/key-bindings.bash"
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+

@@ -34,4 +34,4 @@ source ~/tools/antigen.zsh
 [[ $- == *i* ]] && source "/usr/share/fzf/completion.zsh" 2> /dev/null
 source "/usr/share/fzf/key-bindings.zsh"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
-
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
