@@ -35,3 +35,6 @@ source ~/tools/antigen.zsh
 source "/usr/share/fzf/key-bindings.zsh"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /etc /home'
+export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --bind=alt-j:down,alt-k:up,alt-i:toggle+down --border --preview "echo {} | ~/tools/fzfpreview.py"'
+
