@@ -54,3 +54,6 @@ nnoremap <silent> <Leader>b :Leaderf buffer<CR>
 nnoremap <silent> <Leader>F :Leaderf function<CR>
 "模糊搜索，很强大的功能，迅速秒搜
 nnoremap <silent> <Leader>rg :Leaderf rg<CR>
+set filetype=python
+au BufNewFile,BufRead *.py,*.pyw setf python
+set smartindent " next level indent
